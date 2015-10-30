@@ -20,8 +20,4 @@ gem-2-wig -I human_g1k_v37.gem -i human_g1k_v37.25mer.mappability -o human_g1k_v
 wigToBigWig human_g1k_v37.25mer.wig human_g1k_v37.25mer.sizes human_g1k_v37.25mer.bw
 bigWigToBedGraph bigWigToBedGraph human_g1k_v37.25mer.bw  human_g1k_v37.25mer.bedGraph
 bedGraphTobed human_g1k_v37.25mer.bedGraph human_g1k_v37.25mer.Excludable.bed 0.33 human_g1k_v37.fa human_g1k_v37.25mer.Excludable.Delly.bed
-<<<<<<< HEAD
-
-=======
->>>>>>> b0eef0fbf64ed6099ec5a38243e883b9650aa946
 ```
