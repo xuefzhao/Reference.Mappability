@@ -1,8 +1,8 @@
-#Calculate Reference Mappability
+# Calculate Reference Mappability
 
 To calculate reference mappability.
 
-##hg38 50mers
+## hg38 50mers
 ```
 gem-indexer -i hg38.fa -o hg38
 gem-mappability -I hg38.gem -l 50 -o hg38.50mer -T 8
@@ -12,7 +12,7 @@ bigWigToBedGraph hg38.50mer.bw  hg38.50mer.bedGraph
 bedGraphTobed hg38.50mer.bedGraph hg38.50mer.Excludable.bed 0.33 hg38.fa hg38.Excludable.Delly.bed
 ```
 
-##GRCh37 25mers
+## GRCh37 25mers
 ```
 gem-indexer -i human_g1k_v37.fasta -o human_g1k_v37
 gem-mappability -I human_g1k_v37.gem -l 25 -o human_g1k_v37.25mer -T 8
